@@ -1,0 +1,28 @@
+{
+  "name": "svecha",
+  "version": "1.0.0",
+  "description": "Вёрстка для сайта свечеварения",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikolay Lamanov",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.0.2",
+    "browser-sync": "^2.27.4",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "jquery": "^3.6.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0"
+  }
+}
