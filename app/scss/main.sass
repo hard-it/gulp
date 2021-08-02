@@ -1,4 +1,84 @@
+/* vars */
+$family: 'PT Sans', sans-serif
+$size: 14px
+$lh: 1.5
+$color: #000
+$brown: #5C3635
 body
+  font-family: $family
+  font-size: $size
+  line-height: $lh
+.header
+  padding: 10px 0
+.header-row
+  align-items: center
+.header-logo__img
   width: 100%
-  height: 100%
+.header-contacts
   display: flex
+  justify-content: space-between
+.header-phone
+  padding-left: 40px
+  background: url(../svg/phone.svg) no-repeat left 15px center
+.header-phone__row
+  padding-left: 15px
+.header-phone__link
+  color: $color
+  font-weight: 700
+  font-size: 20px
+  line-height: 24px
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+.header-phone__txt
+  color: #5C3635
+  font-weight: bold
+.header-email
+  padding-left: 40px
+  background: url(../svg/email.svg) no-repeat left 15px center
+.header-email__link
+  font-weight: bold
+  font-size: 16px
+  line-height: 45px
+  color: $color
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+.header-email__row
+  padding-left: 15px
+.header-time
+  padding-top: 3px
+  padding-left: 40px
+  background: url(../svg/time.svg) no-repeat left 15px center
+.header-time__row
+  padding-left: 15px
+  font-weight: 700
+  font-size: 16px
+  line-height: 20px
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+.header-page__list
+  display: flex
+  justify-content: flex-end
+.header-page__link
+  display: block
+  min-width: 40px
+  height: 40px
+  margin: 0 8px
+.search-page
+  background: url(../svg/search.svg) no-repeat center center
+.account-page
+  background: url(../svg/account.svg) no-repeat center center
+.favorites-page
+  background: url(../svg/favorites.svg) no-repeat center center
+.cart-page
+  padding-left: 40px
+  margin-right: 0
+  background: url(../svg/cart.svg) no-repeat left center
+.header-page__txt
+  padding-left: 10px
+  display: block
+  font-weight: 700
+  font-size: 16px
+  color: $color
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+.header-page__price
+  padding-left: 10px
+  display: block
+  color: $color
+  text-align: center

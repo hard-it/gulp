@@ -12,7 +12,9 @@ const del          = require('del');
 
 function browser_sync() {
 	browserSync.init({
-		server: { baseDir: 'app/' },
+		proxy: {
+			target: 'http://sn/app/'
+		},
 		notify: false,
 		online: false
 	});
@@ -20,7 +22,7 @@ function browser_sync() {
 
 function styles() {
 	return src([
-		'node_modules/bootstrap/dist/css/bootstrap-reboot.css',
+		'app/lib/normalize.css',
 		'node_modules/bootstrap/dist/css/bootstrap-grid.css',
 		'app/scss/main.sass'
 	])
@@ -62,7 +64,7 @@ function buildCopy() {
 		'app/css/**/*.min.css',
 		'app/js/**/*.min.js',
 		'app/img/dist/**/*',
-		'app/**/*.html'
+		'app/**/*.php'
 	], { base: 'app'})
 	.pipe(dest('dist/'))
 }
@@ -70,7 +72,7 @@ function buildCopy() {
 function update(){
 	watch('app/scss/*', styles);
 	watch(['app/**/*.js','!app/js/*.min.js'], scripts);
-	watch('app/**/*.html').on('change', browserSync.reload)
+	watch('app/**/*.php').on('change', browserSync.reload)
 	watch('app/img/src/**/*', images)
 }
 
