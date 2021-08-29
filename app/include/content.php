@@ -5,6 +5,7 @@
 			<? include_once __DIR__.'/blocks/main/catalog-menu.php';?>
 			<? include_once __DIR__.'/blocks/main/popular.php';?>
 			<? include_once __DIR__.'/blocks/main/new.php';?>
+			<? include_once __DIR__.'/blocks/main/seo-text.php';?>
         </div>
     </div>
 </main>
